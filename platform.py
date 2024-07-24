@@ -26,6 +26,9 @@ IS_WINDOWS = sys.platform.startswith("win")
 
 
 class Espressif32Platform(PlatformBase):
+    def is_embedded(self):
+        return True
+
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):
             return super().configure_default_packages(variables, targets)
