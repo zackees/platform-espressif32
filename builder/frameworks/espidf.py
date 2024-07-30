@@ -650,7 +650,7 @@ def generate_project_ld_script(sdk_config, ignore_targets=None):
         "sections.ld.in",
     )
 
-    if IDF5:
+    if IDF5 and IDF_minor > 2:
         initial_ld_script = preprocess_linker_file(
             initial_ld_script,
             os.path.join(
