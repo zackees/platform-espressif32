@@ -19,7 +19,7 @@
   },
   "frameworks": [
     "arduino",
-    "espidf""
+    "espidf"
   ],
   "name": "Espressif Generic ESP32-solo1 4M Flash",
   "upload": {
